@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>www.html.com</title>
+</head>
+<body>
+ <applet code="helloworldapplet.class" width="320" height="120" >
+ </applet>
+ </body>
+ </html>

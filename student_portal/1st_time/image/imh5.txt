@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>www.mywebsite.com</title>
+</head>
+<body>
+<img src="2017-07-12-13-57-06-855.jpg"/>
+</body>
+</html>

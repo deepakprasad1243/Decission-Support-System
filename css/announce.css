@@ -1,0 +1,49 @@
+#annon_head{
+  padding: 0;
+  background-color: #e5e0e0;
+  width: 100%;
+  height: 35px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+}
+#annon_head h2{
+  margin-top: 0px;
+  margin-bottom: -10px;
+    font-size: 20px;
+    font-variant:small-caps;
+    color:#9E9E9E;
+}
+
+.holder {
+  width:100%;
+  height:400px;
+  overflow:hidden;
+  padding-top: 0px;
+  padding-left: 5px;
+  font-family:Helvetica;
+}
+.holder .mask {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width:95%;
+  height:400px;
+  overflow: hidden;
+}
+.holder ul {
+
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.holder ul li {
+
+  padding:10px 0px 10px 20px;
+}
+.holder ul li a {
+  
+  color:#817c79;
+  text-decoration:none;
+}

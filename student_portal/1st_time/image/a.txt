@@ -1,0 +1,32 @@
+/*wifi module */
+#include<SoftwareSerial.h>
+SoftwareSerial esp(2,3);  //Rx    Tx
+void setup()
+{esp.begin(9600);
+ Serial.begin(9600);
+ command("AT+RST\r\n\r\n",200);
+ command("AT+CWJAP=\"GOLU\",\"siddharth\"\r\n\r\n",200);
+ command("AT+CWMODE=3\r\n\r\n",200);
+ command("AT+CIPMUX=1\r\n\r\n",200);
+ command("AT+CIPSERVER=1,80\r\n\r\n",200);
+ pinMode(13,OUTPUT);
+ pinMode(12,OUTPUT);
+ Serial.println("CHIP OPERATIONS");
+}
+
+void loop()
+{if(esp.available())
+ Serial.print((char)esp.read());
+ if(esp.find("on1"))
+ {digitalWrite(13,HIGH);Serial.println("on1");delay(1000);}
+ else if (esp.find("off1"))
+ {digitalWrite(13,LOW);Serial.println("off1");delay(1000);}
+ else if(esp.find("on2"))
+ {digitalWrite(12,HIGH);Serial.println("on2");delay(1000);}
+ else if (esp.find("off2"))
+ {digitalWrite(12,LOW);Serial.println("off2");delay(1000);}
+}
+void command(String cmd,int times)
+{esp.println (cmd);
+ delay(times);
+}

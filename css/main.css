@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+html{
+  min-height:100%;
+  font-size:10px;
+  background-color: #f2f2f2;
+}
+body{
+    background-color: #e5e0e0;
+}
+/* -------- top ----*/
+
+#top{
+  font-size:12px;
+
+}
+#top a{
+  color:#555;
+}
+#top a:hover{
+  background: none;
+  background-color: none;
+  text-decoration: underline;
+}
+#top li{
+  padding:0px 5px;
+}
+.menu ul {
+  color:black;
+  margin-left:50%;
+
+  width:60%;
+}
+.menu ul li a{
+  color:#817c79;
+  padding-left:18px;
+  padding-right:18px;
+
+  padding-bottom:5px;
+  padding-top: 5px;
+  font-weight:550;
+}
+.menu ul li a:hover {
+  background-color:;
+  -webkit-border-radius:2px;
+  color:white;
+}
+.menu ul li a:focus {
+  background-color:#3b736f;
+  -webkit-border-radius:2px;
+  color:white;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+  background-color:#3b736f;
+  -webkit-border-radius:2px;
+  color:white;
+}
+/*-------------drop-----------------------*/
+marquee{
+  height:380px;
+}
+
+
+/*            tenders and notices      */
+
+.wrapper {
+  margin: 10px auto;
+  width: 100%;
+  height: 240px;
+  font-family: sans-serif;
+  color: #98927C;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 100%;
+  min-width: 340px;
+  overflow: hidden;
+}
+
+.tabs li {
+  list-style: none;
+  float: left;
+  width: 10%;
+}
+.tabs a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  font-variant: small-caps;
+  color: #3b726e;
+  height: 40px;
+  line-height: 40px;
+}
+.tabs a:hover,
+.tabs a.active {
+  background-color: #3b726e;
+  color: #fff;
+}
+.tabs a:before {
+  content: '';
+  position: absolute;
+  z-index: 11;
+  left: 100%;
+  top: -100%;
+  height: 40px;
+  line-height: 60px;
+  width: 0;
+  border-right: 7px solid transparent;
+}
+.tabs a.active:before {
+  content: '';
+  position: absolute;
+  z-index: 11;
+  left: 100%;
+  top: -100%;
+  height: 70px;
+  line-height: 90px;
+  width: 0;
+  border-right: 20px solid transparent;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#notice ul,
+#tender ul {
+  list-style-type: none;
+}
+#notice ul li a,
+#tender ul li a {
+  text-decoration: none;
+  color: #817c8c;
+}
+#notice ul li a:hover,
+#tender ul li a:hover {
+  color: #817c8g;
+}
+
+
+/*        highlights        */
+
+
+.sp-nh-buttons, .sp-nh-item, .sp-nh-prev, .sp-nh-next {
+  height: 25px;
+  line-height: 25px;
+  display:inline;
+}
+
+.sp-nh-item {
+  overflow: hidden;
+  position: relative;
+}
